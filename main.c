@@ -14,11 +14,8 @@ int main(void)
 {
 	char description[] = "Lorem Ipsum - ";
 
-	srand(time(NULL));
-	for (int i = 0; i < 50; i++) {
-		usleep(randMax(200000));
-		printBar(description, i*2);
-	}
-	flushBar(description);
+	printBar("Lorem Ipsm - ", 50);
+	printf("\n");
+	flushBar("Completed - ");
 	return 0;
 }
