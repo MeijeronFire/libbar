@@ -35,7 +35,6 @@ void incrementBar(char *description, int max)
 	char bar[BAR_WIDTH + 3] =
 		"[--------------------------------------------------]";
 
-	// by bitwise anding, we emulate min(percentage, 50);
 	static int amount;
 	static int percentage;
 
